@@ -1,2 +1,2 @@
 # V1
-My personal portfolio site, V1.  
+Version 1 of my personal portfolio site.
