@@ -1,0 +1,25 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 3em;
+    height: 80px;
+}
+
+nav .navRight {
+    display: flex;
+    justify-content: end;
+}
+
+nav .links {
+    display: inline-block;
+    text-align: right;
+}
+
+nav .links a {
+    margin-left: 1em;
+}
+
+nav .links a:hover {
+    border-bottom: .5em solid #006B38FF;
+}
