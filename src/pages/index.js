@@ -1,10 +1,14 @@
 import React from 'react'
+import Layout from '../components/Layout'
 
 function Home() {
   return (
-    <div>
-      Hello World
-    </div>
+    <Layout>
+      <div id="portfolio">Portfolio</div>
+      <div id="About">About</div>
+      <div id="experience">Experience</div>
+      <div id="contact">Contact</div>
+    </Layout>
   )
 }
 
