@@ -1,25 +1,81 @@
 nav {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin: 0 3em;
-    height: 80px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-content: center;
+    margin: 0 2rem;
+    min-height: 3rem;
+    padding-top: 1rem;
 }
 
-nav .navRight {
-    display: flex;
-    justify-content: end;
+.brand {
+    justify-self: start;
+    line-height: 1em; /* /*lines up with nav links */
 }
 
-nav .links {
-    display: inline-block;
-    text-align: right;
+nav h1 {
+    font-size: 1.5em;
 }
 
-nav .links a {
-    margin-left: 1em;
+.hamburgerMenu {
+    display: none;
 }
 
-nav .links a:hover {
-    border-bottom: .5em solid #006B38FF;
+.navLinks {
+    justify-self: end;
+    line-height: 2em; /*lines up with site brand */
+}
+
+.navLinks a {
+    margin: 0 1em;
+}
+
+.navLinks a:hover {
+    border-bottom: .25em solid #006B38FF;
+}
+
+@media only screen and (max-width: 650px){
+    .hamburgerMenu {
+        justify-self: end;
+        align-self: center;
+        display: flex;
+        flex-direction: column;
+        background-color: #101820FF;
+        border: none;
+        width: 2em;
+        height: 2em;
+    }
+
+    .bar {
+        height: .5em;
+        width: 100%;
+        margin: .25em 0;
+        background-color: white;
+
+    }
+
+    .navLinks {
+        display: none;
+    }
+
+    .navLinks.showMobile {
+        grid-row-start: 2;
+        grid-row-end: 3;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        justify-self: center;
+        margin: 2em 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navLinks.showMobile a {
+        font-size: 1.5em;
+        margin: .5em 0;
+
+    }
+
+    
 }
