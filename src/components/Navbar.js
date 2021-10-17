@@ -13,7 +13,7 @@ function Navbar() {
     return (
         <header>
             <nav>
-                <div classname={styles.brand}>
+                <div className={styles.brand}>
                     <h1>td.dev</h1>
                 </div>
                 <button
