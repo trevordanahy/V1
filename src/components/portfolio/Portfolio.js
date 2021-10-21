@@ -30,7 +30,7 @@ function Portfolio() {
 
 
     return (
-        <section id='portfolio'>
+        <div className={styles.portfolio}>
             {projects.map(project => (
                 <div className={styles.card} key={project.frontmatter.title}>
                     <div className={styles.projectTitle}>
@@ -53,7 +53,7 @@ function Portfolio() {
                     </div>
                 </div>
             ))}
-        </section>
+        </div>
     )
 }
 

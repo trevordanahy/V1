@@ -1,0 +1,27 @@
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    column-gap: 1em;
+    width: 100%;
+    align-items: center;
+    justify-items: center;
+}
+
+.about {
+    max-width: 70%;
+    display: flex;
+    flex-direction: column;
+    padding: 0 1em 0 1em;
+}
+
+.subHeading {
+    justify-self: center;
+    /* border-left:.25em solid #006B38FF ; */
+    border-right: .25em solid #006B38FF;
+
+    margin-bottom: 2em;
+    text-align: center;
+}
+
+
+
