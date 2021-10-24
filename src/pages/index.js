@@ -1,5 +1,6 @@
 import React from 'react'
 import About from '../components/About'
+import Experience from '../components/experience/Experience'
 import Hero from '../components/Hero'
 import Layout from '../components/Layout'
 import Portfolio from '../components/portfolio/Portfolio'
@@ -16,7 +17,9 @@ function Home() {
       <Section id="about" title="About">
         <About />
       </Section>
-      <div id="experience">Experience</div>
+      <Section id="experience" title="Experience">
+        <Experience />
+      </Section>
       <div id="contact">Contact</div>
     </Layout>
   )

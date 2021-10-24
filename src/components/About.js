@@ -16,7 +16,7 @@ function About() {
                     sunt in culpa qui officia deserunt mollit anim id est laborum.
                 </p>
             </div>
-            <div className={styles.skills}>
+            <div>
                 <h3 className={styles.subHeading}>Skills </h3>
                 <ul>
                     <li>Python</li>
