@@ -12,8 +12,9 @@
     max-width: 25rem;
     min-height: 25rem;
     max-height: 30rem;
-    border-radius: 1em;
-    box-shadow: 0 0 1em .25em rgb(54, 55, 56);
+    border-radius: 1em 1em 0 0;
+    border: 2px solid rgba(0, 107, 55, 0.376);
+    /* box-shadow: 0 0 1em .25em rgb(0, 75, 40); */
     margin: 3em;
     display: flex;
     flex-direction: column;
@@ -30,7 +31,6 @@
     margin-bottom: 1em;
     display: flex;
     justify-content: center;
-    /* background-color: #006B38FF; */
     border-radius: .25em;
 }
 
@@ -48,7 +48,7 @@
     bottom: 0;
     min-width: 1em;
     min-height: 2em;
-    background-color: #006B38FF;
+    background-color: rgba(0, 107, 55, 0.376);
     border-radius: 0 .5em 0 0;
     display: flex;
     flex-direction: column;
@@ -61,13 +61,14 @@
     min-height: 3.5em;
 }
 
+
 .projectLink {
     position: absolute;
     right: 0;
     bottom: 0;
     min-width: 1em;
     min-height: 2em;
-    background-color: #006B38FF;
+    background-color: rgba(0, 107, 55, 0.376);
     border-radius: .5em 0 0 0 ;
     display: flex;
     flex-direction: column;
