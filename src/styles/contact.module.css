@@ -1,0 +1,58 @@
+.contact {
+    width: 100%;
+    min-height: 20vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact h2 {
+    font-size: 2em;
+    color: #006B38FF;
+}
+
+.contact p {
+    width: 30%;
+    margin: 1em 0;
+    text-align: center;
+    font-size: 1em;
+    color: #bbbec4;
+}
+
+.email {
+    display: flex;
+    flex-direction: row;
+    align-content: baseline;
+    justify-content: center;
+    margin: 1em;
+}
+
+.email h4 {
+    margin: 0 1em;
+    font-size: 1em;
+    color: white;
+    border-bottom: .1em solid #006B38FF;
+}
+
+.email button {
+    background-color: #101820FF;
+    border: 1px solid #006B38FF; 
+}
+
+.email button:hover {
+    cursor: pointer;
+}
+
+.contact button {
+    background-color: #006B38FF;  
+    font-size: .75em; 
+    color: white;
+    padding: .25em;
+    border-radius: .25em;
+    border: none;
+}
+
+.contact button:hover {
+    cursor: pointer;
+}

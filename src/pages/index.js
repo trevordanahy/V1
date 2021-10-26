@@ -4,6 +4,7 @@ import Experience from '../components/experience/Experience'
 import Hero from '../components/Hero'
 import Layout from '../components/Layout'
 import Portfolio from '../components/portfolio/Portfolio'
+import Contact from '../components/Contact'
 import Section from '../components/Section'
 import '../styles/global.css'
 
@@ -20,7 +21,9 @@ function Home() {
       <Section id="experience" title="Experience">
         <Experience />
       </Section>
-      <div id="contact">Contact</div>
+      <Section id="contact" title="Contact">
+        <Contact />
+      </Section>
     </Layout>
   )
 }

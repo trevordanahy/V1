@@ -4,7 +4,6 @@ import { experience } from './workExperience'
 import * as styles from '../../styles/experience.module.css'
 
 function Timeline() {
-    console.log(experience)
     return (
         <div className={styles.container}>
             <Chrono
@@ -15,7 +14,6 @@ function Timeline() {
                 theme={{
                     primary: "#006B38FF",
                     secondary: "#006B38FF",
-                    // cardBgColor: "#101820FF",
                     cardBgColor: "#006B38FF",
                     cardForeColor: "white",
                     titleColor: "white"
