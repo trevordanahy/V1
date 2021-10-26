@@ -1,5 +1,6 @@
 import React from 'react'
 import * as styles from '../styles/contact.module.css'
+import Clipboard from '../img/icons/clipboardWhite.svg'
 
 function Contact() {
     const email = "trevor.danahy@protonmail.com"
@@ -18,10 +19,10 @@ function Contact() {
                 <button
                     onClick={() => navigator.clipboard.writeText(email)}
                 >
-                    copy
+                    <Clipboard />
                 </button>
             </div>
-            <button>Open Email Client</button>
+            <a href="mailto:trevor.danahy@protonmail.com">Open Email Client</a>
         </div>
     )
 }

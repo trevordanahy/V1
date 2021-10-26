@@ -16,8 +16,8 @@
     width: 30%;
     margin: 1em 0;
     text-align: center;
-    font-size: 1em;
-    color: #bbbec4;
+    font-size: .9em;
+    color: #999999;
 }
 
 .email {
@@ -37,17 +37,19 @@
 
 .email button {
     background-color: #101820FF;
-    border: 1px solid #006B38FF; 
+    border: none;
+    border-radius: .25em;
+
 }
 
 .email button:hover {
     cursor: pointer;
 }
 
-.contact button {
+.contact a {
     background-color: #006B38FF;  
     font-size: .75em; 
-    color: white;
+    color: #FFFFFF;
     padding: .25em;
     border-radius: .25em;
     border: none;

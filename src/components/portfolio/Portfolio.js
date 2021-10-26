@@ -2,6 +2,8 @@ import React from 'react'
 import { graphql, Link, useStaticQuery } from 'gatsby'
 import * as styles from '../../styles/portfolio.module.css'
 import { GatsbyImage, getImage } from 'gatsby-plugin-image'
+import GithubLight from '../../img/icons/githubLight.svg'
+import LinkIconLight from '../../img/icons/linkLight.svg'
 
 
 function Portfolio() {
@@ -46,10 +48,14 @@ function Portfolio() {
                         alt="project image"
                     />
                     <div className={styles.projectGithub}>
-                        <Link to={project.frontmatter.github}>G</Link>
+                        <Link to={project.frontmatter.github}>
+                            <GithubLight />
+                        </Link>
                     </div>
                     <div className={styles.projectLink}>
-                        <Link to={project.frontmatter.projectLink}>L</Link>
+                        <Link to={project.frontmatter.projectLink}>
+                            <LinkIconLight />
+                        </Link>
                     </div>
                 </div>
             ))}
