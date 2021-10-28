@@ -25,7 +25,6 @@
     flex-direction: row;
     align-content: baseline;
     justify-content: center;
-    margin: 1em;
 }
 
 .email h4 {
@@ -43,10 +42,25 @@
 }
 
 .email button:hover {
+    background-color: #006B38FF;
+    border: none;
+    border-radius: .25em;
+
+}
+
+.email button:hover {
     cursor: pointer;
 }
 
+.message {
+    margin-left: 1em;
+    font-size: 1em;
+    color:#006B38FF;
+    margin-bottom: .25em;
+}
+
 .contact a {
+    margin-top: 1em;
     background-color: #006B38FF;  
     font-size: .75em; 
     color: #FFFFFF;
@@ -55,6 +69,17 @@
     border: none;
 }
 
-.contact button:hover {
+.contact a:hover {
     cursor: pointer;
+    padding: .75em;
+}
+
+@media only screen and (max-width: 650px){
+    .contact h2 {
+        font-size: 1.5em;
+    }
+    
+    .contact p {
+        width: 70%;
+    }
 }
