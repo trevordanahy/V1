@@ -77,8 +77,3 @@
     justify-content: center;
     align-items: center;
 }
-
-.projectLink:hover {
-    min-width: 2.5em;
-    min-height: 3.5em;
-}
