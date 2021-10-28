@@ -10,6 +10,9 @@
 .heroText {
     max-width: 70%;
     justify-self: end;
+    transform: translateX(-200%);
+    animation: slideRight 300ms ease-out 500ms;
+    animation-fill-mode: forwards;
 }
 
 .heroText h2 {
@@ -42,6 +45,10 @@
     max-height: 75%;
     justify-self: start;
     box-shadow: 20px 20px 0 0 #101820FF, 25px 25px 0 0 #006B38FF;
+    transform: scale(0);
+    animation: scaleUp 500ms ease-in-out 500ms;
+    animation-fill-mode: forwards;
+
 }
 
 .heroImg:hover {
@@ -59,7 +66,8 @@
 @media only screen and (max-width: 750px){
     .hero {
         display: flex;
-        align-content: center;
+        justify-content: center;
+        align-items: center;
     }
 
     .heroText {
@@ -68,5 +76,29 @@
 
     .heroImg {
         display: none;
+    }
+}
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-200%);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+@keyframes scaleUp {
+    0% {
+        transform: scale(0);
+    }
+
+    90%{
+        transform: scale(1.1);
+    }
+
+    100% {
+        transform: scale(1);
     }
 }

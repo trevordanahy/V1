@@ -9,7 +9,10 @@ nav {
 
 .brand {
     justify-self: start;
-    line-height: 1em; /* /*lines up with nav links */
+    line-height: 2em; /* /*lines up with nav links */
+    transform: translateY(-200%);
+    animation: slideRight 300ms ease-in-out;
+    animation-fill-mode: forwards;
 }
 
 nav h1 {
@@ -23,10 +26,14 @@ nav h1 {
 .navLinks {
     justify-self: end;
     line-height: 2em; /*lines up with site brand */
+    transform: translateY(-200%);
+    animation: slideDown 500ms ease-in-out 150ms;
+    animation-fill-mode: forwards;
 }
 
 .navLinks a {
     margin: 0 1em;
+    
 }
 
 .navLinks a:hover {
@@ -78,4 +85,29 @@ nav h1 {
     }
 
     
+}
+
+@keyframes slideDown {
+    0% {
+        transform: translateY(-200%);
+    }
+    100% {
+        transform: translateY(0);
+    }
+}
+
+
+@keyframes slideRight {
+    0% {
+        transform: translateX(-100%);
+    }
+
+    90% {
+        transform: translateX(1.1);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+
 }

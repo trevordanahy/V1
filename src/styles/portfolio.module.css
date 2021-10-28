@@ -24,11 +24,12 @@
 }
 
 .card p {
+    font-size: .75em;
     padding: .5em;
+    margin: 1em .5em;
 }
 
 .projectTitle {
-    margin-bottom: 1em;
     display: flex;
     justify-content: center;
     border-radius: .25em;
