@@ -45,3 +45,22 @@ footer ul {
     justify-content: space-between;
     margin-bottom: 2em;
 }
+
+footer ul li {
+    position: relative;
+}
+
+footer ul li:hover {
+    top: -0.5em;
+}
+
+@media only screen and (max-width: 650px){
+    main {
+        margin: 0 auto;
+        padding: 0 3px;
+    }
+
+    footer ul {
+        width: 60%;
+    }
+}

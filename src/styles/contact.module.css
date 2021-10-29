@@ -74,12 +74,3 @@
     padding: .75em;
 }
 
-@media only screen and (max-width: 650px){
-    .contact h2 {
-        font-size: 1.5em;
-    }
-    
-    .contact p {
-        width: 70%;
-    }
-}
